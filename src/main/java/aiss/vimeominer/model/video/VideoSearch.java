@@ -27,7 +27,7 @@ public class VideoSearch {
     @JsonProperty("paging")
     private Paging paging;
     @JsonProperty("data")
-    private List<Datum> data;
+    private List<Video> data;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
@@ -46,7 +46,7 @@ public class VideoSearch {
      * @param paging
      * @param page
      */
-    public VideoSearch(Integer total, Integer page, Integer perPage, Paging paging, List<Datum> data) {
+    public VideoSearch(Integer total, Integer page, Integer perPage, Paging paging, List<Video> data) {
         super();
         this.total = total;
         this.page = page;
@@ -116,16 +116,16 @@ public class VideoSearch {
     }
 
     @JsonProperty("data")
-    public List<Datum> getData() {
+    public List<Video> getData() {
         return data;
     }
 
     @JsonProperty("data")
-    public void setData(List<Datum> data) {
+    public void setData(List<Video> data) {
         this.data = data;
     }
 
-    public VideoSearch withData(List<Datum> data) {
+    public VideoSearch withData(List<Video> data) {
         this.data = data;
         return this;
     }

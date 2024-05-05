@@ -3,7 +3,6 @@ package aiss.vimeominer.model.comment;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import javax.annotation.Generated;
 
 import com.fasterxml.jackson.annotation.*;
 

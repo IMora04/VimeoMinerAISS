@@ -1,6 +1,7 @@
-package aiss.YouTubeMiner.model.youtube.caption;
+package aiss.youtubeminer.model.caption;
 
 import com.fasterxml.jackson.annotation.*;
+import aiss.youtubeminer.model.caption.*;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Caption {

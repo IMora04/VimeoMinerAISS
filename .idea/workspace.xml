@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b348da7d-7b27-4cb7-88c8-e7fd895990b4" name="Changes" comment="Youtube model classes" />
+    <list default="true" id="b348da7d-7b27-4cb7-88c8-e7fd895990b4" name="Changes" comment="Paquetes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetSearch.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +62,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/aiss/youtubeminer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Miguel Prado Jiménez\Documentos\Apuntes Universidad\Segundo año\AISS\VideoMinerAISS\src\main\java\aiss\vimeominer\model\video" />
       <recent name="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -78,6 +85,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
         <option value="jdk-20.0.2-azul-20.0.2-4caba194b151-895bf479" />
       </set>
     </attachedChunks>
@@ -124,6 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Template uploading. First AISS project II commit" />
     <MESSAGE value="Youtube model classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Youtube model classes" />
+    <MESSAGE value="Paquetes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paquetes" />
   </component>
 </project>

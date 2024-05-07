@@ -20,4 +20,11 @@ public class VideoServiceTests {
         }
     }
 
+    @Test
+    void getVideosChannel(){
+        for(Video v:videoService.getVideosOfChannel(1904324)){
+            System.out.println(v.getName());
+        }
+    }
+
 }

@@ -31,4 +31,18 @@ public class VideoService {
 
         return response.getBody().getData();
     }
+
+    public List<Video> getVideosOfChannel(Integer channelId){
+        String uri = "https://api.vimeo.com/channels/" + channelId +"/videos";
+        HttpHeaders header = new HttpHeaders();
+        header.set("Authorization","Bearer " + "5394a30ebd1c27d98804ed901a30358a");
+
+        HttpEntity<VideoSearch> request = new HttpEntity<>(null, header);
+
+        ResponseEntity<VideoSearch> response = restTemplate.exchange(uri, HttpMethod.GET,
+                request, VideoSearch.class);
+
+        return response.getBody().getData();
+
+    }
 }

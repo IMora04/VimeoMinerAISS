@@ -27,7 +27,7 @@ public class CommentSearch {
     @JsonProperty("paging")
     private Paging paging;
     @JsonProperty("data")
-    private List<CommentList> data;
+    private List<Comment> data;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
@@ -46,7 +46,7 @@ public class CommentSearch {
      * @param paging
      * @param page
      */
-    public CommentSearch(Integer total, Integer page, Integer perPage, Paging paging, List<CommentList> data) {
+    public CommentSearch(Integer total, Integer page, Integer perPage, Paging paging, List<Comment> data) {
         super();
         this.total = total;
         this.page = page;
@@ -116,16 +116,16 @@ public class CommentSearch {
     }
 
     @JsonProperty("data")
-    public List<CommentList> getData() {
+    public List<Comment> getData() {
         return data;
     }
 
     @JsonProperty("data")
-    public void setData(List<CommentList> data) {
+    public void setData(List<Comment> data) {
         this.data = data;
     }
 
-    public CommentSearch withData(List<CommentList> data) {
+    public CommentSearch withData(List<Comment> data) {
         this.data = data;
         return this;
     }

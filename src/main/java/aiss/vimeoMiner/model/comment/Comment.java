@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.*;
     "user"
 })
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CommentList {
+public class Comment {
 
     @JsonProperty("uri")
     private String uri;
@@ -31,7 +31,7 @@ public class CommentList {
      * No args constructor for use in serialization
      * 
      */
-    public CommentList() {
+    public Comment() {
     }
 
     /**
@@ -41,7 +41,7 @@ public class CommentList {
      * @param createdOn
      * @param user
      */
-    public CommentList(String uri, String text, String createdOn, User user) {
+    public Comment(String uri, String text, String createdOn, User user) {
         super();
         this.uri = uri;
         this.text = text;
@@ -59,7 +59,7 @@ public class CommentList {
         this.uri = uri;
     }
 
-    public CommentList withUri(String uri) {
+    public Comment withUri(String uri) {
         this.uri = uri;
         return this;
     }
@@ -74,7 +74,7 @@ public class CommentList {
         this.text = text;
     }
 
-    public CommentList withText(String text) {
+    public Comment withText(String text) {
         this.text = text;
         return this;
     }
@@ -89,7 +89,7 @@ public class CommentList {
         this.createdOn = createdOn;
     }
 
-    public CommentList withCreatedOn(String createdOn) {
+    public Comment withCreatedOn(String createdOn) {
         this.createdOn = createdOn;
         return this;
     }
@@ -104,7 +104,7 @@ public class CommentList {
         this.user = user;
     }
 
-    public CommentList withUser(User user) {
+    public Comment withUser(User user) {
         this.user = user;
         return this;
     }
@@ -119,7 +119,7 @@ public class CommentList {
         this.additionalProperties.put(name, value);
     }
 
-    public CommentList withAdditionalProperty(String name, Object value) {
+    public Comment withAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
         return this;
     }
@@ -127,7 +127,7 @@ public class CommentList {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(CommentList.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(Comment.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("uri");
         sb.append('=');
         sb.append(((this.uri == null)?"<null>":this.uri));

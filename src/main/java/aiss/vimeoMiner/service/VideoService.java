@@ -32,12 +32,12 @@ public class VideoService {
         return response.getBody().getData();
     }
 
-    public List<Video> getVideosOfChannel(Integer channelId){
+    public List<Video> getVideosOfChannel(String channelId){
         return getVideosOfChannel(channelId,10);
     }
 
-    public List<Video> getVideosOfChannel(Integer channelId, Integer numChannels){
-        String uri = "https://api.vimeo.com/channels/" + channelId +"/videos?per_page="+numChannels;
+    public List<Video> getVideosOfChannel(String channelId, Integer numVideos){
+        String uri = "https://api.vimeo.com/channels/" + channelId +"/videos?per_page="+numVideos;
         HttpHeaders header = new HttpHeaders();
         header.set("Authorization","Bearer " + "5394a30ebd1c27d98804ed901a30358a");
 

@@ -22,7 +22,7 @@ public class VideoServiceTests {
 
     @Test
     void getVideosChannel(){
-        for(Video v:videoService.getVideosOfChannel(1904324)){
+        for(Video v:videoService.getVideosOfChannel(1904320,2)){
             System.out.println(v.getName());
         }
     }

@@ -19,18 +19,6 @@ public class VideoService {
     @Autowired
     RestTemplate restTemplate;
 
-    public List<Video>  getVideos(){
-        String uri = "https://api.vimeo.com/videos?direction=asc&filter=trending";
-        HttpHeaders header = new HttpHeaders();
-        header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
-
-        HttpEntity<VideoSearch> request = new HttpEntity<>(null, header);
-
-        ResponseEntity<VideoSearch> response = restTemplate.exchange(uri, HttpMethod.GET,
-                request, VideoSearch.class);
-
-        return response.getBody().getData();
-    }
 
     public List<Video> getVideosOfChannel(String channelId){
         return getVideosOfChannel(channelId,10);

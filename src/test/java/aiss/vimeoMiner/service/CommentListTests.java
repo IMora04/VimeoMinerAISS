@@ -23,7 +23,7 @@ public class CommentListTests {
     }
     @Test
     void getCommentsOfVideo(){
-        for(Comment c:commentService.getComments("1234",1)){
+        for(Comment c:commentService.getComments("1234",2)){
             System.out.println(c.getText());
         }
     }

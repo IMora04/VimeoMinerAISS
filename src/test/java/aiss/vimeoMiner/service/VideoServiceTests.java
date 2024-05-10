@@ -15,7 +15,7 @@ public class VideoServiceTests {
 
     @Test
     void getVideos() {
-        for(Video v:videoService.getVideos()) {
+        for(Video v:videoService.getVideosOfChannel("1904320")) {
             System.out.println(v.getName());
         }
     }

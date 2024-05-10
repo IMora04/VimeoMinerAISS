@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b348da7d-7b27-4cb7-88c8-e7fd895990b4" name="Changes" comment="VimeoMiner video service test.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/aiss/vimeoMiner/service/CaptionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/service/CaptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/service/CaptionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/aiss/vimeoMiner/VimeoMinerApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/aiss/vimeoMiner/service/VideoServiceTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/aiss/vimeoMiner/service/CaptionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aiss/vimeoMiner/service/CaptionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aiss/vimeoMiner/model/comment/CommentSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aiss/vimeoMiner/model/video/Datum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aiss/vimeoMiner/service/CaptionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aiss/vimeoMiner/service/VideoService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,7 @@
       <recent name="aiss" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CaptionTest.getCaptions">
+  <component name="RunManager" selected="JUnit.VideominerApplicationTests.contextLoads">
     <configuration name="CaptionTest.getCaptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="videominer" />
       <extension name="coverage">
@@ -187,9 +187,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VideominerApplicationTests.contextLoads" />
         <item itemvalue="JUnit.CaptionTest.getCaptions" />
         <item itemvalue="JUnit.VideoServiceTests.getVideos" />
-        <item itemvalue="JUnit.VideominerApplicationTests.contextLoads" />
         <item itemvalue="JUnit.VideoServiceTest.getVideos" />
       </list>
     </recent_temporary>
@@ -227,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714912184082</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="VimeoMiner video service test.">
+      <option name="closed" value="true" />
+      <created>1715339823300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715339823301</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

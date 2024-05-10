@@ -17,20 +17,17 @@ public class CaptionService {
     @Autowired
     RestTemplate restTemplate;
 
-    public List<Captions> getCaptions(){
-        String uri = "https://api.vimeo.com/captions/";
+    public Captions getCaptions(String videoId){
+        String uri = "https://api.vimeo.com/videos/" + videoId + "/texttracks"; ;
         HttpHeaders header = new HttpHeaders();
-        header.set("Authorization", "Bearer " + );
+        header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
 
-        HttpEntity<CaptionList> request = new HttpEntity<>(null, header);
+        HttpEntity<Captions> request = new HttpEntity<>(null, header);
 
-        ResponseEntity<CaptionList> response = restTemplate.exchange(uri, HttpMethod.GET, request, CaptionList.class);
+        ResponseEntity<Captions> response = restTemplate.exchange(uri, HttpMethod.GET, request, Captions.class);
 
-        return response.getBody().getData();
+        return response.getBody();
     }
 
-    public List<Captions> getCaptions(String captionId){
-        return getCaptions();
-    }
 
 }

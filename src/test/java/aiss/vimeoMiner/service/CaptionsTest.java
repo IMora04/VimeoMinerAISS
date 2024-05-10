@@ -12,9 +12,7 @@ public class CaptionsTest {
     CaptionService captionService;
 
     void getCaptions(){
-        for(Captions c:captionService.getCaptions()){
-            System.out.println(c.getData());
-        }
+        Captions captions = captionService.getCaptions("1234");
     }
 
 }

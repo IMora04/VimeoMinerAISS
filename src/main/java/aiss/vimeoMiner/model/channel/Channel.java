@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 })
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ChannelList {
+public class Channel {
 
     @JsonProperty("uri")
     private String uri;
@@ -69,7 +69,7 @@ public class ChannelList {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(ChannelList.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(Channel.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("uri");
         sb.append('=');
         sb.append(((this.uri == null)?"<null>":this.uri));

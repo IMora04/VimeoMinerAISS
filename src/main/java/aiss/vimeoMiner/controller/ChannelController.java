@@ -10,8 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-
 import java.util.List;
+
+
+import static aiss.vimeoMiner.parser.Modelparser.channelParser;
 
 @RestController
 @RequestMapping("/vimeominer/channels")
@@ -21,14 +23,6 @@ public class ChannelController {
         HttpEntity<VMChannel> request = new HttpEntity<>(newChannel);
         ResponseEntity<VMChannel> response = restTemplate.exchange(uri, HttpMethod.POST, request, VMChannel.class);
         return response.getBody();
-    }
-    public static VMChannel channelParser(Channel channel){
-        VMChannel newChannel = new VMChannel();
-        newChannel.setId(channel.getUri().substring(11));
-        newChannel.setDescription(channel.getDescription());
-        newChannel.setName(channel.getName());
-        newChannel.setCreatedTime(channel.getCreatedTime());
-        return newChannel;
     }
 
     @Autowired

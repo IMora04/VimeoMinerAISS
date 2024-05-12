@@ -1,9 +1,13 @@
 
 package aiss.vimeoMiner.model.video;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
+import aiss.vimeoMiner.model.captions.Caption;
+import aiss.vimeoMiner.model.comment.Comment;
 import com.fasterxml.jackson.annotation.*;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -25,6 +29,11 @@ public class Video {
     private String description;
     @JsonProperty("created_time")
     private String createdTime;
+    @JsonProperty("comments")
+    private List<Comment> comments;
+    @JsonProperty("captions")
+    private List<Caption> captions;
+
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
@@ -48,6 +57,38 @@ public class Video {
         this.name = name;
         this.description = description;
         this.createdTime = createdTime;
+        this.comments = new ArrayList<>();
+        this.captions = new ArrayList<>();
+    }
+
+    @JsonProperty("comments")
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    @JsonProperty("comments")
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+    public Video withComments(List<Comment> comments) {
+        this.comments = comments;
+        return this;
+    }
+
+    @JsonProperty("captions")
+    public List<Caption> getCaptions() {
+        return captions;
+    }
+
+    @JsonProperty("captions")
+    public void setCaptions(List<Caption> uri) {
+        this.captions = captions;
+    }
+
+    public Video withCaptions(List<Caption> captions) {
+        this.captions = captions;
+        return this;
     }
 
     @JsonProperty("uri")

@@ -1,5 +1,5 @@
 
-package aiss.vimeoMiner.model.user;
+package aiss.vimeoMiner.model.comment;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

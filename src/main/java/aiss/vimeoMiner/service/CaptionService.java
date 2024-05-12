@@ -10,21 +10,23 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
+
 @Service("captionService")
 public class CaptionService {
     @Autowired
     RestTemplate restTemplate;
 
-    public Caption getCaptions(String channelId, String videoId){
-        String uri = "https://api.vimeo.com/channels/" + channelId + "/videos/" + videoId + "/texttracks";
+    public List<Caption> getCaptions(String videoId){
+        String uri = "https://api.vimeo.com/videos/" + videoId + "/texttracks";
         HttpHeaders header = new HttpHeaders();
         header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
 
-        HttpEntity<Caption> request = new HttpEntity<>(null, header);
+        HttpEntity<CaptionSearch> request = new HttpEntity<>(null, header);
 
-        ResponseEntity<Caption> response = restTemplate.exchange(uri, HttpMethod.GET, request, Caption.class);
+        ResponseEntity<CaptionSearch> response = restTemplate.exchange(uri, HttpMethod.GET, request, CaptionSearch.class);
 
-        return response.getBody();
+        return response.getBody().getData();
     }
 
 

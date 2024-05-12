@@ -30,6 +30,17 @@ public class ChannelService {
         return response.getBody().getData();
     }
 
+    public Channel getChannel(String channelId) {
+        String uri = "https://api.vimeo.com/channels/" + channelId;
+        HttpHeaders header = new HttpHeaders();
+        header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
 
+        HttpEntity<Channel> request = new HttpEntity<>(null, header);
 
+        ResponseEntity<Channel> response = restTemplate.exchange(uri, HttpMethod.GET,
+                request, Channel.class);
+
+        return response.getBody();
+
+    }
 }

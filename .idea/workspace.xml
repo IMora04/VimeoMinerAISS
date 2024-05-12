@@ -6,71 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b348da7d-7b27-4cb7-88c8-e7fd895990b4" name="Changes" comment="VimeoMiner video service test.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/VideominerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/VimeoMinerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/videominer/model/Caption.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/videominer/model/Channel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/videominer/model/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/videominer/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/videominer/model/Video.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/captions/CaptionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/captions/CaptionList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/captions/Captions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/captions/Captions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/captions/Paging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/captions/Paging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/channel/ChannelList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/channel/ChannelList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/channel/ChannelSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/channel/ChannelSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/channel/Paging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/channel/Paging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/comment/CommentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/comment/CommentList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/comment/CommentSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/comment/CommentSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/comment/Paging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/comment/Paging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/comment/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/comment/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/user/Pictures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/user/Pictures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/video/Datum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/video/Datum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/video/Paging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/video/Paging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/video/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/video/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/model/video/VideoSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/model/video/VideoSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeominer/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/service/VideoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/caption/Caption.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/caption/CaptionSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/caption/CaptionSnippet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/channel/Channel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/channel/ChannelSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/channel/ChannelSnippet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/comment/AuthorChannelId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/comment/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/comment/CommentSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/comment/CommentSnippet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/comment/CommentSnippet__1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/comment/TopLevelComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/youtubeminer/model/videoSnippet/VideoSnippetSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/aiss/VideominerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aiss/vimeoMiner/VimeoMinerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/aiss/videominer/VideominerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/aiss/vimeominer/VimeominerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aiss/vimeoMiner/service/VideoServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/aiss/vimeominer/service/VideoServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/caption/Caption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/caption/CaptionSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/caption/CaptionSnippet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/channel/Channel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/channel/ChannelSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/channel/ChannelSnippet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/comment/AuthorChannelId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/comment/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/comment/CommentSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/comment/CommentSnippet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/comment/CommentSnippet__1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/comment/TopLevelComment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/videoSnippet/VideoSnippet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/videoSnippet/VideoSnippetDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/videoSnippet/VideoSnippetId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/YouTubeMiner/model/youtube/videoSnippet/VideoSnippetSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/videominer/VideominerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/videominer/model/Caption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/videominer/model/Channel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/videominer/model/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/videominer/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aiss/videominer/model/Video.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/service/CaptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aiss/vimeoMiner/service/CaptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/aiss/vimeoMiner/service/CaptionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/aiss/vimeoMiner/service/CaptionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aiss/vimeoMiner/model/comment/CommentSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aiss/vimeoMiner/model/video/Datum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aiss/vimeoMiner/service/CaptionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aiss/vimeoMiner/service/VideoService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,14 +34,12 @@
     &quot;assignee&quot;: &quot;IMora04&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="7d4cc69b-2c03-4dce-8c32-9feab5b13736" />
-        <option name="url" value="https://github.com/IMora04/VideoMinerAISS.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/IMora04/VimeoMinerAISS.git&quot;,
+    &quot;accountId&quot;: &quot;c0321c89-b193-420e-814f-c38d19404874&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -110,28 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.VideominerApplication.executor": "Run",
-    "JUnit.VideoServiceTest.getVideos.executor": "Run",
-    "JUnit.VideoServiceTests.getVideos.executor": "Run",
-    "JUnit.VideominerApplicationTests.contextLoads (1).executor": "Run",
-    "JUnit.VideominerApplicationTests.contextLoads.executor": "Run",
-    "JUnit.VimeominerTests.executor": "Run",
-    "JUnit.VimeominerTests.getVideos.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "20",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ignacio/git/VimeoMinerAISS",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.VideominerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CaptionTest.getCaptions.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VideoServiceTest.getVideos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VideoServiceTests.getVideos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VideominerApplicationTests.contextLoads (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VideominerApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VimeominerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VimeominerTests.getVideos.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ignacio/git/VimeoMinerAISS&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/aiss/youtubeminer" />
@@ -151,7 +91,23 @@
       <recent name="aiss" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VideoServiceTests.getVideos">
+  <component name="RunManager" selected="JUnit.VideominerApplicationTests.contextLoads">
+    <configuration name="CaptionTest.getCaptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="videominer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aiss.vimeoMiner.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="aiss.vimeoMiner.service" />
+      <option name="MAIN_CLASS_NAME" value="aiss.vimeoMiner.service.CaptionTest" />
+      <option name="METHOD_NAME" value="getCaptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VideoServiceTest.getVideos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="videominer" />
       <extension name="coverage">
@@ -231,19 +187,12 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VideoServiceTests.getVideos" />
         <item itemvalue="JUnit.VideominerApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.CaptionTest.getCaptions" />
+        <item itemvalue="JUnit.VideoServiceTests.getVideos" />
         <item itemvalue="JUnit.VideoServiceTest.getVideos" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-be841094" />
-        <option value="jdk-20.0.2-azul-20.0.2-4caba194b151-895bf479" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -278,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714912184082</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="VimeoMiner video service test.">
+      <option name="closed" value="true" />
+      <created>1715339823300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715339823301</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

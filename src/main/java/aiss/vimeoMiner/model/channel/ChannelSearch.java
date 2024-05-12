@@ -29,7 +29,7 @@ public class ChannelSearch {
     @JsonProperty("paging")
     private Paging paging;
     @JsonProperty("data")
-    private List<ChannelList> data;
+    private List<Channel> data;
 
     @JsonProperty("total")
     public Integer getTotal() {
@@ -72,12 +72,12 @@ public class ChannelSearch {
     }
 
     @JsonProperty("data")
-    public List<ChannelList> getData() {
+    public List<Channel> getData() {
         return data;
     }
 
     @JsonProperty("data")
-    public void setData(List<ChannelList> data) {
+    public void setData(List<Channel> data) {
         this.data = data;
     }
 

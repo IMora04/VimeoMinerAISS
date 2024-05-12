@@ -2,6 +2,7 @@ package aiss.vimeoMiner.service;
 
 
 import aiss.vimeoMiner.model.channel.Channel;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,15 +15,17 @@ public class ChannelsTest {
     ChannelService channelService;
 
     @Test
+    @DisplayName("Test get channels")
     void getChannels() {
         for (Channel c : channelService.getChannels()) {
-            System.out.println(c.getName());
+            System.out.println("Channel name: " + c.getName() + ". Description: " + c.getDescription());
         }
     }
     @Test
+    @DisplayName("Test get channel given its Id")
     void getChannel(){
-            Channel channel = channelService.getChannel("1234");
-            System.out.println(channel.getName());
+            Channel c = channelService.getChannel("1234");
+            System.out.println("Channel name: " + c.getName() + ". Description: " + c.getDescription());
 
     }
 }

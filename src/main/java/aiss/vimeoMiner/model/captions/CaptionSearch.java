@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.*;
 })
 @JsonIgnoreProperties(ignoreUnknown = true)
 
-public class Captions {
+public class CaptionSearch {
 
     @JsonProperty("total")
     private Integer total;
@@ -28,7 +28,7 @@ public class Captions {
     @JsonProperty("paging")
     private Paging paging;
     @JsonProperty("data")
-    private List<CaptionList> data;
+    private List<Caption> data;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
@@ -36,7 +36,7 @@ public class Captions {
      * No args constructor for use in serialization
      * 
      */
-    public Captions() {
+    public CaptionSearch() {
     }
 
     /**
@@ -47,7 +47,7 @@ public class Captions {
      * @param paging
      * @param page
      */
-    public Captions(Integer total, Integer page, Integer perPage, Paging paging, List<CaptionList> data) {
+    public CaptionSearch(Integer total, Integer page, Integer perPage, Paging paging, List<Caption> data) {
         super();
         this.total = total;
         this.page = page;
@@ -66,7 +66,7 @@ public class Captions {
         this.total = total;
     }
 
-    public Captions withTotal(Integer total) {
+    public CaptionSearch withTotal(Integer total) {
         this.total = total;
         return this;
     }
@@ -81,7 +81,7 @@ public class Captions {
         this.page = page;
     }
 
-    public Captions withPage(Integer page) {
+    public CaptionSearch withPage(Integer page) {
         this.page = page;
         return this;
     }
@@ -96,7 +96,7 @@ public class Captions {
         this.perPage = perPage;
     }
 
-    public Captions withPerPage(Integer perPage) {
+    public CaptionSearch withPerPage(Integer perPage) {
         this.perPage = perPage;
         return this;
     }
@@ -111,22 +111,22 @@ public class Captions {
         this.paging = paging;
     }
 
-    public Captions withPaging(Paging paging) {
+    public CaptionSearch withPaging(Paging paging) {
         this.paging = paging;
         return this;
     }
 
     @JsonProperty("data")
-    public List<CaptionList> getData() {
+    public List<Caption> getData() {
         return data;
     }
 
     @JsonProperty("data")
-    public void setData(List<CaptionList> data) {
+    public void setData(List<Caption> data) {
         this.data = data;
     }
 
-    public Captions withData(List<CaptionList> data) {
+    public CaptionSearch withData(List<Caption> data) {
         this.data = data;
         return this;
     }
@@ -141,7 +141,7 @@ public class Captions {
         this.additionalProperties.put(name, value);
     }
 
-    public Captions withAdditionalProperty(String name, Object value) {
+    public CaptionSearch withAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
         return this;
     }
@@ -149,7 +149,7 @@ public class Captions {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(Captions.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(CaptionSearch.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("total");
         sb.append('=');
         sb.append(((this.total == null)?"<null>":this.total));

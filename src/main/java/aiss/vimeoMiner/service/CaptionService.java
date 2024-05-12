@@ -1,6 +1,7 @@
 package aiss.vimeoMiner.service;
 
-import aiss.vimeoMiner.model.captions.Captions;
+import aiss.vimeoMiner.model.captions.Caption;
+import aiss.vimeoMiner.model.captions.CaptionSearch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -14,14 +15,14 @@ public class CaptionService {
     @Autowired
     RestTemplate restTemplate;
 
-    public Captions getCaptions(String videoId){
-        String uri = "https://api.vimeo.com/videos/" + videoId; ;
+    public Caption getCaptions(String channelId, String videoId){
+        String uri = "https://api.vimeo.com/channels/" + channelId + "/videos/" + videoId + "/texttracks";
         HttpHeaders header = new HttpHeaders();
         header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
 
-        HttpEntity<Captions> request = new HttpEntity<>(null, header);
+        HttpEntity<Caption> request = new HttpEntity<>(null, header);
 
-        ResponseEntity<Captions> response = restTemplate.exchange(uri, HttpMethod.GET, request, Captions.class);
+        ResponseEntity<Caption> response = restTemplate.exchange(uri, HttpMethod.GET, request, Caption.class);
 
         return response.getBody();
     }

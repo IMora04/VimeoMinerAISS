@@ -1,6 +1,7 @@
 package aiss.vimeoMiner.service;
 
-import aiss.vimeoMiner.model.captions.Captions;
+import aiss.vimeoMiner.model.captions.Caption;
+import aiss.vimeoMiner.model.captions.CaptionSearch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,8 +17,8 @@ public class CaptionsTest {
 
     @Test
     void getCaptions(){
-        Captions captions = captionService.getCaptions("1234");
-        System.out.println(captions);
+        Caption caption = captionService.getCaptions("1905299", "945454931");
+        System.out.println(caption);
     }
 
 }

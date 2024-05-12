@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.*;
 })
 @JsonIgnoreProperties(ignoreUnknown = true)
 
-public class CaptionList {
+public class Caption {
 
     @JsonProperty("language")
     private String language;
@@ -29,7 +29,7 @@ public class CaptionList {
      * No args constructor for use in serialization
      * 
      */
-    public CaptionList() {
+    public Caption() {
     }
 
     /**
@@ -38,7 +38,7 @@ public class CaptionList {
      * @param language
      * @param id
      */
-    public CaptionList(String language, Integer id, String name) {
+    public Caption(String language, Integer id, String name) {
         super();
         this.language = language;
         this.id = id;
@@ -55,7 +55,7 @@ public class CaptionList {
         this.language = language;
     }
 
-    public CaptionList withLanguage(String language) {
+    public Caption withLanguage(String language) {
         this.language = language;
         return this;
     }
@@ -70,7 +70,7 @@ public class CaptionList {
         this.id = id;
     }
 
-    public CaptionList withId(Integer id) {
+    public Caption withId(Integer id) {
         this.id = id;
         return this;
     }
@@ -85,7 +85,7 @@ public class CaptionList {
         this.name = name;
     }
 
-    public CaptionList withName(String name) {
+    public Caption withName(String name) {
         this.name = name;
         return this;
     }
@@ -100,7 +100,7 @@ public class CaptionList {
         this.additionalProperties.put(name, value);
     }
 
-    public CaptionList withAdditionalProperty(String name, Object value) {
+    public Caption withAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
         return this;
     }
@@ -108,7 +108,7 @@ public class CaptionList {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(CaptionList.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(Caption.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("language");
         sb.append('=');
         sb.append(((this.language == null)?"<null>":this.language));

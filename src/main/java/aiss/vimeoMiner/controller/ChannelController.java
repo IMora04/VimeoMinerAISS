@@ -20,7 +20,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 
-import static aiss.vimeoMiner.parser.Modelparser.channelParser;
+import static aiss.vimeoMiner.parser.ModelParser.channelParser;
 
 @Tag(name = "Channel", description = "Channel management API")
 
@@ -68,7 +68,7 @@ public class ChannelController {
             @ApiResponse(responseCode = "404", content = {@Content(schema = @Schema())})
     })
 
-    @GetMapping("/{id")
+    @GetMapping("/{id}")
     public Channel findOne(@Parameter(description = "id of the channel to be searched")@PathVariable String id){
         return channelService.getChannel(id);
     }

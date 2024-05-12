@@ -27,8 +27,9 @@ import static aiss.vimeoMiner.parser.ModelParser.channelParser;
 @RestController
 @RequestMapping("/vimeominer/channels")
 public class ChannelController {
+
     public VMChannel sentToVideoMiner(VMChannel newChannel){
-        String uri = "https://localhost:8080/videominer/channels";
+        String uri = "http://localhost:8080/videominer/channels";
         HttpEntity<VMChannel> request = new HttpEntity<>(newChannel);
         ResponseEntity<VMChannel> response = restTemplate.exchange(uri, HttpMethod.POST, request, VMChannel.class);
         return response.getBody();
@@ -39,52 +40,49 @@ public class ChannelController {
     @Autowired
     RestTemplate restTemplate;
 
+
     @Operation(
             summary = "Retrive a list of channels",
             description = "Get a list of channels",
             tags = {"channel", "get"}
     )
-
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "List of channels", content = {@Content(schema = @Schema(implementation = Channel.class),
                     mediaType = "application/json")}),
             @ApiResponse(responseCode = "404", description = "Channel not found", content = {@Content(schema = @Schema())})
     })
-
     @GetMapping
     public List<Channel> findAll() {
         return channelService.getChannels();
     }
+
 
     @Operation(
             summary = "Retrive a channel by id",
             description = "Get a channel object specifying its id",
             tags = {"channel", "get"}
     )
-
     @ApiResponses({
             @ApiResponse(responseCode = "200", content = {@Content(schema = @Schema(implementation = Channel.class),
                     mediaType = "application/json")}),
             @ApiResponse(responseCode = "404", content = {@Content(schema = @Schema())})
     })
-
     @GetMapping("/{id}")
     public Channel findOne(@Parameter(description = "id of the channel to be searched")@PathVariable String id){
         return channelService.getChannel(id);
     }
+
 
     @Operation(
             summary = "Upload a channel by ID to VideoMiner",
             description = "Retrieves a channel by its ID, parses it to a VMChannel format, and uploads it to VideoMiner.",
             tags = {"channel", "upload"}
     )
-
     @ApiResponses({
             @ApiResponse(responseCode = "201", description = "Channel uploaded successfully", content = {@Content(schema = @Schema(implementation = VMChannel.class),
                     mediaType = "application/json")}),
             @ApiResponse(responseCode = "404", content = {@Content(schema = @Schema())})
     })
-
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/{id}")
     public VMChannel uploadChannel(@PathVariable String id) {

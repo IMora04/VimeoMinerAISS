@@ -2,6 +2,7 @@ package aiss.vimeoMiner.service;
 
 import aiss.vimeoMiner.model.channel.ChannelSearch;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -14,13 +15,16 @@ import java.util.List;
 @Service("channelService")
 public class ChannelService {
 
+    @Value("vimeominer.token")
+    private String token;
+
     @Autowired
     RestTemplate restTemplate;
 
     public List<Channel> getChannels(){
         String uri = "https://api.vimeo.com/channels";
         HttpHeaders header = new HttpHeaders();
-        header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
+        header.set("Authorization", "Bearer " + token);
 
         HttpEntity<ChannelSearch> request = new HttpEntity<>(null, header);
 

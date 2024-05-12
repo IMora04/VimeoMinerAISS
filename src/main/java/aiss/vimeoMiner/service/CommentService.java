@@ -5,6 +5,7 @@ import aiss.vimeoMiner.model.comment.CommentSearch;
 import aiss.vimeoMiner.model.video.Video;
 import aiss.vimeoMiner.model.video.VideoSearch;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -16,12 +17,17 @@ import java.util.List;
 
 @Service("commentService")
 public class CommentService {
+
+    @Value("vimeominer.token")
+    private String token;
+
     @Autowired
     RestTemplate restTemplate;
+
     public List<Comment> getComments(String videoId, Integer numComments) {
         String uri = "https://api.vimeo.com/videos/" + videoId + "/comments?per_page=" + numComments;
         HttpHeaders header = new HttpHeaders();
-        header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
+        header.set("Authorization", "Bearer " + token);
 
         HttpEntity<CommentSearch> request = new HttpEntity<>(null, header);
 

@@ -15,8 +15,8 @@ public class CaptionService {
     @Autowired
     RestTemplate restTemplate;
 
-    public Caption getCaptions(String videoId){
-        String uri = "https://api.vimeo.com/videos/" + videoId + "/texttracks"; ;
+    public Caption getCaptions(String channelId, String videoId){
+        String uri = "https://api.vimeo.com/channels/" + channelId + "/videos/" + videoId + "/texttracks";
         HttpHeaders header = new HttpHeaders();
         header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
 

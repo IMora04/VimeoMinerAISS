@@ -17,7 +17,7 @@ public class CaptionsTest {
 
     @Test
     void getCaptions(){
-        Caption caption = captionService.getCaptions("1234");
+        Caption caption = captionService.getCaptions("1905299", "945454931");
         System.out.println(caption);
     }
 

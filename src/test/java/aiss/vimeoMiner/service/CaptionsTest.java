@@ -8,6 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.test.context.ContextConfiguration;
 
+import java.util.List;
+
 @SpringBootTest
 @ContextConfiguration
 public class CaptionsTest {
@@ -16,9 +18,9 @@ public class CaptionsTest {
     CaptionService captionService;
 
     @Test
-    void getCaptions(){
-        Caption caption = captionService.getCaptions("1905299", "945454931");
-        System.out.println(caption);
+    void getCaptions() {
+        for (Caption c : captionService.getCaptions("944988988")) {
+            System.out.println(c);
+        }
     }
-
 }

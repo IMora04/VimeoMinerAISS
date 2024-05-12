@@ -2,6 +2,7 @@ package aiss.vimeoMiner.service;
 
 import aiss.vimeoMiner.model.comment.Comment;
 import aiss.vimeoMiner.model.video.Video;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -16,15 +17,17 @@ public class CommentListTests {
     CommentService commentService;
 
     @Test
-    void getComments(){
+    @DisplayName("Test get comments of a given video")
+    void getCommentsVideo(){
         for(Comment c: commentService.getComments("1234")){
-            System.out.println(c.getText());
+            System.out.println("Author: " + c.getUser() + ". Content: " + c.getText());
         }
     }
     @Test
-    void getCommentsOfVideo(){
+    @DisplayName("Test get comments of a given video, limiting the amount received")
+    void getCommentsLimited(){
         for(Comment c:commentService.getComments("1234",2)){
-            System.out.println(c.getText());
+            System.out.println("Author: " + c.getUser() + ". Content: " + c.getText());
         }
     }
 

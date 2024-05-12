@@ -26,7 +26,7 @@ public class CommentListTests {
     @Test
     @DisplayName("Test get comments of a given video, limiting the amount received")
     void getCommentsLimited(){
-        for(Comment c:commentService.getComments("1234",2)){
+        for(Comment c:commentService.getComments("1234",1)){
             System.out.println("Author: " + c.getUser() + ". Content: " + c.getText());
         }
     }

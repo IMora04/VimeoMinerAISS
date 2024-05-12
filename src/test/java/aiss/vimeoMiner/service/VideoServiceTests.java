@@ -17,7 +17,7 @@ public class VideoServiceTests {
     @Test
     @DisplayName("Get videos of a channel given its id")
     void getVideosChannel() {
-        for(Video v:videoService.getVideosOfChannel("1904320")) {
+        for(Video v:videoService.getVideosOfChannel("1234")) {
             System.out.println(v.getName() + ": " + v.getDescription());
         }
     }
@@ -25,7 +25,7 @@ public class VideoServiceTests {
     @Test
     @DisplayName("Test get videos of a given channel, limiting the amount received")
     void getVideosChannelLimited(){
-        for(Video v:videoService.getVideosOfChannel("1904320",2)){
+        for(Video v:videoService.getVideosOfChannel("1234",2)){
             System.out.println(v.getName() + ": " + v.getDescription());
         }
     }

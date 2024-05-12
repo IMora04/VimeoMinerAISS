@@ -35,7 +35,7 @@ public class Modelparser {
 
     public static VMComment commentParser(Comment comment){
         VMComment newComment = new VMComment();
-        newComment.setId();
+        newComment.setId(comment.getUri().substring(comment.getUri().lastIndexOf('/') + 1));
         newComment.setAuthor(parseUser(comment.getUser()));
         newComment.setText(comment.getText());
         newComment.setCreatedOn(comment.getCreatedOn());
@@ -44,10 +44,12 @@ public class Modelparser {
 
     public static VMUser parseUser(User user){
         VMUser vmUser = new VMUser();
-        vmUser.setId(user.getUri());
-        vmUser.setName(user);
-        vmUser.setUser_link();
+        vmUser.setId(user.getId());
+        vmUser.setName(user.getName());
+        vmUser.setUser_link(user.getUser_link());
         vmUser.setPicture_link();
+        return vmUser;
+
     }
 
 

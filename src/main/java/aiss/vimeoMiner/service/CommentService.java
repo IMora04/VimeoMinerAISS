@@ -18,7 +18,7 @@ import java.util.List;
 @Service("commentService")
 public class CommentService {
 
-    @Value("vimeominer.token")
+    @Value("${vimeominer.token}")
     private String token;
 
     @Autowired

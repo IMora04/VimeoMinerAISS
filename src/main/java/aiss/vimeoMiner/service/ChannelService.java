@@ -15,7 +15,7 @@ import java.util.List;
 @Service("channelService")
 public class ChannelService {
 
-    @Value("vimeominer.token")
+    @Value("${vimeominer.token}")
     private String token;
 
     @Autowired
@@ -24,6 +24,7 @@ public class ChannelService {
     public List<Channel> getChannels(){
         String uri = "https://api.vimeo.com/channels";
         HttpHeaders header = new HttpHeaders();
+        System.out.println(token);
         header.set("Authorization", "Bearer " + token);
 
         HttpEntity<ChannelSearch> request = new HttpEntity<>(null, header);
@@ -37,7 +38,7 @@ public class ChannelService {
     public Channel getChannel(String channelId) {
         String uri = "https://api.vimeo.com/channels/" + channelId;
         HttpHeaders header = new HttpHeaders();
-        header.set("Authorization", "Bearer " + "5394a30ebd1c27d98804ed901a30358a");
+        header.set("Authorization", "Bearer " + token);
 
         HttpEntity<Channel> request = new HttpEntity<>(null, header);
 

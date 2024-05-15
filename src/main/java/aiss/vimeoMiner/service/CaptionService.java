@@ -16,7 +16,7 @@ import java.util.List;
 @Service("captionService")
 public class CaptionService {
 
-    @Value("vimeominer.token")
+    @Value("${vimeominer.token}")
     private String token;
 
     @Autowired

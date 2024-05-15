@@ -20,7 +20,7 @@ public class VideoService {
     @Autowired
     RestTemplate restTemplate;
 
-    @Value("vimeominer.token")
+    @Value("${vimeominer.token}")
     private String token;
 
     public List<Video> getVideosOfChannel(String channelId){
